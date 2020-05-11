@@ -9,9 +9,9 @@
     <script src="https://kit.fontawesome.com/7b4d2fea99.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body class="container w-100 mw-100">
 
-    <nav>
+    <nav class="row">
         <img class="logo" src="assets/images/logo.png" alt="The Boathouse">
     </nav>
 
@@ -19,84 +19,82 @@
         <div class="row hero">
             <div class="col-md-6 hero-image">
             </div>
-            <div class="col-md-6 hero-form">
-                <h1>Book Your Appointment</h1>
+            <div class="col-md-6 hero-form d-flex flex-column justify-content-center">
                 <form>
+                    <h1 class="mb-5 text-center center text-md-left">Book Your Appointment</h1>
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input type="name" class="form-control" placeholder="Full Name" id="name" aria-describedby="emailHelp">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
+                        <input type="email" class="form-control" placeholder="Email" id="email">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
         </div>
-        <div class="intro row">
+        <div class="intro row text-center py-5">
             <div class="col-12 wrapper">
-                <h2>Have The Water Front Wedding of Your Dreams</h2>
+                <h2 class="mb-5">Have The Water Front Wedding of Your Dreams</h2>
                 <p>We've simplified the planning process for wedding couples by offering all-inclusive services, a full bar, and an exceptional menu for your occasion with our various event packages. We can't wait to welcome you and your guests to our picturesque space as you celebrate your special day!</p>
             </div>
         </div>
-        <div class="locations">
-            <div class="wrapper">
-                <h3>Locations</h3>
-                <div class="row locations-widgets">
-                    <div class="col-md-4 locations-widget-1">
+        <div class="locations row py-5">
+            <div class="wrapper col-12">
+                <h3 class="mb-5 title">Locations</h3>
+                <div class="row locations-widgets text-center">
+                    <div class="col-md-4 locations-widget">
                         <div class="locations-image"></div>
-                        <p>The Boathouse at Sunday Park</p>
+                        <h5 class="mb-2">The Boathouse at Sunday Park</h5>
                         <h6>On the scenic Swift Creek Reservoir in Midlothian, VA</h6>
                     </div>
-                    <div class="col-md-4 locations-widget-2">
+                    <div class="col-md-4 locations-widget">
                         <div class="locations-image"></div>
-                        <p>The Boathouse at Rocketts Landing</p>
+                        <h5 class="mb-2">The Boathouse at Rocketts Landing</h5>
                         <h6>Along the banks of the James River in Richmond, VA</h6>
                     </div>
-                    <div class="col-md-4 locations-widget-3">
+                    <div class="col-md-4 locations-widget">
                         <div class="locations-image"></div>
-                        <p>The Boathouse at City Point</p>
+                        <h5 class="mb-2">The Boathouse at City Point</h5>
                         <h6>Perched above the Appomattox River in Hopewell, VA</h6>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="exclusive">
+        <div class="exclusive py-5">
             <div class="wrapper">
-                <h3>Exclusively at The Boathouse</h3>
-                <div class="grid-container d-flex flex-wrap">
-                    <div class="box">
+                <h3 class="title">Exclusively at The Boathouse</h3>
+                <div class="grid-container d-flex flex-wrap py-5">
+                    <div class="box box-1">
                         <div class="box-wrapper">
                             <h3>Waterfront Views</h3>
                             <p>We chose the Boathouse at Rockett's Landing for our ceremony and reception venue for several reasons. The view of the city is amazing, we love the water, the food is always fantastic,and instead of coordination all of the little things such as linens, a caterer, servers, bartenders, chairs, tables, etc., it's all there wrapped into one! This was especially important to me, and made the planning process easy.</p>
                             <h4>Lea</h4>
                         </div>
                     </div>
-                    <div class="box"></div>
-                    <div class="box">
+                    <div class="box box-2"></div>
+                    <div class="box box-3">
                         <div class="box-wrapper">
                             <h3>All-Inclusive</h3>
                             <p>We were looking for a venue that was "very Richmond." Our first time visiting it, and seeing the view and how it would look being married with the James River and city skyline as our backdrop, we were sold. The fact that the packages are all inclusive made it so easy. Everything was so beautiful, so elegant, and just perfect. It really was our perfect day, and I wouldn't change a thing.</p>
                             <h4>Amanda</h4>
                         </div> 
                     </div>
-                    <div class="box"></div>
-                    <div class="box">
+                    <div class="box box-4"></div>
+                    <div class="box box-5">
                         <div class="box-wrapper">
                             <h3>Event Coordination</h3>
                             <p>Using The Boathouse as our venue cut down the amount of vendors we had to coordinate as well as they handle the tables, chairs, linens, dance floor, bar, and catering. The rehearsal and wedding/reception went super smoothly and neither my husband, my mom, or my mother in law had to worry about the thing. Highly recommend this venue!</p>
                             <h4>Lilly</h4>
                         </div> 
                     </div>
-                    <div class="box"></div>
+                    <div class="box box-6"></div>
                 </div>
             </div>
         </div>
     </main>
 
-    <footer>
-        <div class="footer-icons d-flex justify-content-center my-3">
+    <footer class="row">
+        <div class="footer-icons d-flex justify-content-center my-4">
             <a class="instagram mr-2" href="#"><i class="fab fa-instagram"></i></a>
             <a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a>
         </div>
