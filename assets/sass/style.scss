@@ -519,7 +519,9 @@ $mq-base: 20em; // 320px
 
 
 // -------- Fonts  
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800;900&display=swap');;
 
 @include font-face("Rochester", "../fonts/Rochester-Regular", normal, normal, eot ttf woff);
 
@@ -563,12 +565,12 @@ $f-script: 'Rochester', serif;
   h3 {
       font-weight: bold;
     //   @include fluidTypeSize(3.125, 1.8);
-      @include fluidTypeSize(2.8, 1.8);
+      @include fluidTypeSize(2.125, 1.4);
       &::after {
         content: "";
         display: block;
         border-bottom: solid 2px $c-theme3;
-        width: 100px;
+        width: 110px;
         margin-top: .25em;
     }
   }
@@ -594,7 +596,6 @@ $f-script: 'Rochester', serif;
   p, ul, li, a, label, input[type="text"],
   textarea[type="text"], input[type="text"]::placeholder, textarea[type="text"]::placeholder, button[type="submit"] {
     font-family: $f-body;
-    @include fluidTypeSize(1.18, 1);
     margin: 0;
     color: $c-theme3;;
   }
@@ -640,9 +641,9 @@ body {
     }
     main {
         .hero {
-            height: 80vh;
+            height: 100vh;
             &-image {
-                background: $c-black url("https://via.placeholder.com/600") no-repeat top center / cover;
+                background: $c-black url("../images/hero.png") no-repeat 50% 30% / cover;
             }
             &-form {
                 background-color: $c-white;
@@ -670,8 +671,8 @@ body {
                         border-radius: 50%;
                         background: $c-black url("https://via.placeholder.com/600") no-repeat top center / cover;
                         @media (min-width: $mq-large) {
-                            width: 300px;
-                            height: 300px;
+                            width: 350px;
+                            height: 350px;
                         }
                     }
                     .locations-widget:not(:last-of-type) {
@@ -702,6 +703,9 @@ body {
                 }
                 &-2, &-4, &-6 {
                     background: $c-black url("https://via.placeholder.com/600") no-repeat top center / cover;
+                }
+                &-2 {
+                    background: $c-black url("../images/box-image-1.png") no-repeat top center / cover;
                 }
                 &-5 {
                     background-color: $c-theme2;
