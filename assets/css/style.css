@@ -14,13 +14,12 @@ body {
 
 /* ---------  Fonts */
 h1, h2, h3, h4, h5 {
+  color: #335e7a;
   font-family: "Roboto", sans-serif;
   margin: 0;
-  text-transform: uppercase;
 }
 
 h1 {
-  color: #fff;
   font-size: 2rem;
 }
 
@@ -31,7 +30,6 @@ h1 {
 }
 
 h2 {
-  color: #e4bdad;
   font-size: 1.5rem;
 }
 
@@ -53,7 +51,6 @@ h3 {
 }
 
 h6 {
-  color: #e4bdad;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -117,6 +114,22 @@ nav .logo {
   max-width: 200px;
   margin: auto;
   display: block;
+}
+
+main .hero-image {
+  height: 50vh;
+  background: #000 url("https://via.placeholder.com/600") no-repeat top center/cover;
+}
+
+main .hero-form {
+  background-color: #fff;
+  height: 50vh;
+}
+
+@media (min-width: 56.25em) {
+  main .box {
+    width: 33.333%;
+  }
 }
 
 footer {

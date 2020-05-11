@@ -1,9 +1,21 @@
 /* ---------  Variables */
 $c-theme: #e4bdad;
 $c-theme2: #94a7b5;
+$c-theme3: #335e7a;
 $c-white: #fff;
 $c-black: #000;
 $c-bg: #f1ede8;
+
+// Breakpoints
+$mq-xxLarge: 100em; // 1600px
+$mq-xLarge: 85.9375em; // 1375px
+$mq-large: 75em; // 1200px
+$mq-mediumLarge: 64em; // 1024px
+$mq-medium: 56.25em; // 900px
+$mq-mediumSmall: 48em; // 768px
+$mq-small: 37.5em; // 600px
+$mq-tiny: 30em; // 480px
+$mq-base: 20em; // 320px
 
 @import url(https://fonts.googleapis.com/css?family=Roboto&display=swap);
 
@@ -448,13 +460,12 @@ $f-body: 'Roboto', sans-serif;
 
   /* ---------  Fonts */
   h1, h2, h3, h4, h5 {
+    color: $c-theme3;
     font-family: $f-headings;
     margin: 0;
-    text-transform: uppercase;
   }
 
   h1 {
-    color: $c-white;
     font-size: 2rem;
     @media screen and (min-width: 576px) {
         font-size: 2.5rem;
@@ -462,7 +473,6 @@ $f-body: 'Roboto', sans-serif;
   }
 
   h2 {
-      color: $c-theme;
       font-size: 1.5rem;
       @media screen and (min-width: 576px) {
         font-size: 1.875rem;
@@ -478,7 +488,6 @@ $f-body: 'Roboto', sans-serif;
   }
 
   h6 {
-    color: $c-theme;
     font-weight: bold;
     font-family: $f-headings;
     margin: 0;
@@ -517,6 +526,24 @@ nav {
     .logo {
         @include center(100%, 200px);
         display: block;
+    }
+}
+
+main {
+    .hero {
+        &-image {
+            height: 50vh;
+            background: $c-black url("https://via.placeholder.com/600") no-repeat top center / cover;
+        }
+        &-form {
+            background-color: $c-white;
+            height: 50vh;
+        }
+    }
+    .box {
+        @media (min-width: $mq-medium) {
+            width: 33.333%;
+        }
     }
 }
 
