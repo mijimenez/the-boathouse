@@ -641,7 +641,7 @@ body {
     }
     main {
         .hero {
-            height: 100vh;
+            height: 90vh;
             &-image {
                 background: $c-black url("../images/hero.png") no-repeat 50% 30% / cover;
             }
